@@ -16,7 +16,7 @@ int main() {
 	
 	for(i = 0; i < arr_lenght; i++)
 	{
-		std::cout << "list[" << i + 1 << "] = " << list[i] << "\n";
+		std::cout << "list[" << i + 1 << "] = " << list[i] << "\n ";
 	}
 
 

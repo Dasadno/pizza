@@ -1,24 +1,25 @@
 #include <iostream>
+using namespace std;
 
 int main() {
-
 	setlocale(LC_ALL, "ru");
 
-	const int arr_lenght = 4;
-	int list[arr_lenght];
+	/*
+	const int list_lenght = 7;
+	int numbers[list_lenght];
+
 	int i{};
-
-	for (int i = 0; i < arr_lenght; i++)
+	cout << "¬ведите 7 чисел: ";
+	while (i < list_lenght)
 	{
-		std::cout << "¬ведите число в массив: ";
-		std::cin >> list[i];
+		cin >> numbers[i];
+		i++;
 	}
+	cout << *max_element(begin(numbers), end(numbers)) << " - это самое большое число из введенных";
+
+
 	
-	for(i = 0; i < arr_lenght; i++)
-	{
-		std::cout << "list[" << i + 1 << "] = " << list[i] << "\n ";
-	}
-
+	*/
 
 	return 0;
 }

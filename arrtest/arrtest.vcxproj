@@ -24,6 +24,7 @@
     <ProjectGuid>{be95503f-a793-4dfd-93e7-52935a6d9019}</ProjectGuid>
     <RootNamespace>arrtest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Pizza</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

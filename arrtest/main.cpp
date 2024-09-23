@@ -10,8 +10,8 @@ int main() {
 
 	const double p_num = 3.14159;
 
-	float size1;
-	float size2;
+	string name1;
+	string name2;
 
 	float price1;
 	float price2;
@@ -19,8 +19,6 @@ int main() {
 	float radius1;
 	float radius2;
 
-	int S_pizza1;
-	int S_pizza2;
 
 	float weight1;
 	float weight2;
@@ -34,8 +32,8 @@ int main() {
 	cout << "Привет! \n";
 	cout << "Это программа для вычесления того, насколько вам выгодно покупать ту, или иную пиццу. \n";
 	cout << "-------------------------------------------------------------------------------------- \n";
-	cout << "Введите размер 1й пиццы: ";
-	cin >> size1;
+	cout << "Введите название первой пиццы: ";
+	cin >> name1;
 	cout << "Введите граммовку пиццы: ";
 	cin >> weight1;
 	cout << "Введите стоимость пиццы: ";
@@ -49,8 +47,8 @@ int main() {
 	cout << endl;
 
 
-	cout << "Введите размер 2й пиццы: ";
-	cin >> size2;
+	cout << "Введите название второй пиццы: ";
+	cin >> name2;
 	cout << "Введите граммовку пиццы: ";
 	cin >> weight2;
 	cout << "Введите стоимость пиццы: ";
@@ -68,28 +66,23 @@ int main() {
 
 
 
-	radius1 = size1 / 2;
-	radius2 = size2 / 2;
-	S_pizza1 = p_num * (radius1 * radius1);
-	S_pizza2 = p_num * (radius2 * radius2);
-
 	gr_price1 = weight1 / price1; 
 	gr_price2 = weight2 / price2;
 
 	
-	if (S_pizza1 > S_pizza2 && gr_price1 > gr_price2)
+	if (gr_price1 < gr_price2)
 	{
 		value = gr_price1 * (price1 - price2);
 
-		cout << "Купить первую пиццу выгоднее!";
+		cout << "Купить пиццу " << name1 << " выгоднее!";
 		cout << "Если бы вы покупали вторую пиццу, по цене грамма этой, то вы бы потратили на: " << value << " руб меньше :)";
 	}
 	else
 	{
 		value = gr_price2 * (price2 - price1);
 
-		cout << "Купить вторую пиццу выгоднее! \n";
-		cout << "Если бы вы покупали первую пиццу по цене грамма этой,\nто вы бы потратили на: " << value << " руб меньше :)\n";
+		cout << "Купить пиццу" << name2 <<  " выгоднее! \n";
+		cout << "Если бы вы купили пиццу" << name1 << "по цене грамма этой, \nто сэкономили бы : " << value << " руб )\n";
 		cout << "Цена за грамм первой пиццы " << gr_price1 << "\n Цена за грамм второй пиццы " << gr_price2;
 	}
 

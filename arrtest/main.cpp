@@ -5,8 +5,10 @@ using namespace std;
 
 int main() {
 
-	setlocale(LC_ALL, "ru");
+	SetConsoleCP(1251); 
+	SetConsoleOutputCP(1251); 
 
+	setlocale(LC_ALL, ".1251");
 
 	const double p_num = 3.14159;
 
@@ -74,18 +76,17 @@ int main() {
 	{
 		value = gr_price1 * (price1 - price2);
 
-		cout << "Купить пиццу " << name1 << " выгоднее!";
-		cout << "Если бы вы покупали вторую пиццу, по цене грамма этой, то вы бы потратили на: " << value << " руб меньше :)";
+		cout << "Купить пиццу " << name1 << " выгоднее! \n";
+		cout << "Если бы вы покупали пиццу " << name2 << ", по цене грамма этой, то сэкономили: " << value << " руб";
 	}
 	else
 	{
 		value = gr_price2 * (price2 - price1);
 
-		cout << "Купить пиццу" << name2 <<  " выгоднее! \n";
-		cout << "Если бы вы купили пиццу" << name1 << "по цене грамма этой, \nто сэкономили бы : " << value << " руб )\n";
-		cout << "Цена за грамм первой пиццы " << gr_price1 << "\n Цена за грамм второй пиццы " << gr_price2;
+		cout << "Купить пиццу " << name2 <<  " выгоднее! \n";
+		cout << "Если бы вы купили пиццу " << name1 << ", по цене грамма этой, то сэкономили бы: " << value << " руб \n";
 	}
-
+	cout << "Цена за грамм пиццы " << name1 << ":" << gr_price1 << "\n Цена за грамм пиццы " << name2 << ":" << gr_price2;
 	
 	cout << endl;
 	for (int i{ 0 }; i < 63; i++)

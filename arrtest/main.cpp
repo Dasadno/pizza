@@ -28,8 +28,6 @@ int main() {
 	float gr_price1;
 	float gr_price2;
 
-	int value;
-
 
 	cout << "Привет! \n";
 	cout << "Это программа для вычесления того, насколько вам выгодно покупать ту, или иную пиццу. \n";
@@ -68,23 +66,17 @@ int main() {
 
 
 
-	gr_price1 = weight1 / price1; 
-	gr_price2 = weight2 / price2;
+	gr_price1 = price1 / weight1; 
+	gr_price2 = price2 / weight2;
 
 	
 	if (gr_price1 < gr_price2)
 	{
-		value = gr_price1 * (price1 - price2);
-
 		cout << "Купить пиццу " << name1 << " выгоднее! \n";
-		cout << "Если бы вы покупали пиццу " << name2 << ", по цене грамма этой, то сэкономили: " << value << " руб";
 	}
 	else
 	{
-		value = gr_price2 * (price2 - price1);
-
 		cout << "Купить пиццу " << name2 <<  " выгоднее! \n";
-		cout << "Если бы вы купили пиццу " << name1 << ", по цене грамма этой, то сэкономили бы: " << value << " руб \n";
 	}
 	cout << "Цена за грамм пиццы " << name1 << ":" << gr_price1 << "\n Цена за грамм пиццы " << name2 << ":" << gr_price2;
 	

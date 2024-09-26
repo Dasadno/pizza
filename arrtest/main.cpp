@@ -78,7 +78,7 @@ int main() {
 	{
 		cout << "Êóïèòü ïèööó " << name2 <<  " âûãîäíåå! \n";
 	}
-	cout << "Öåíà çà ãğàìì ïèööû " << name1 << ":" << gr_price1 << "\n Öåíà çà ãğàìì ïèööû " << name2 << ":" << gr_price2;
+	cout << "Öåíà çà ãğàìì ïèööû " << name1 << ":" << gr_price1 << "\nÖåíà çà ãğàìì ïèööû " << name2 << ":" << gr_price2;
 	
 	cout << endl;
 	for (int i{ 0 }; i < 63; i++)
